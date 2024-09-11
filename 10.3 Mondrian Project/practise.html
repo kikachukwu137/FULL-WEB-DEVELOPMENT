@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+
+}
+.grid-container{
+    background-color: black;
+    display: grid;
+    width: 600px;
+    height: 720px;
+    grid-template-columns: 100px 450px 50px;
+    grid-template-rows: 200px 300px 110px 110px;
+    gap:9px;
+    
+}
+.item{
+    background-color: whitesmoke;
+}
+.first{
+    
+}
+.second{
+    grid-column:  span 2;
+    grid-row: span 2;
+    background-color: red;
+}
+.third{
+
+}
+.fourth{
+    background-color: blue;
+    grid-row: span 2;
+}
+.fifth{
+    grid-row: span 2;
+
+}
+.sixth{
+
+}
+.seventh{
+    background-color: yellow;
+}
+</style>
+<body>
+    <div class="grid-container">
+        <div class="first item"></div>
+        <div class="second item"></div>
+        <div class="third item"></div>
+        <div class="fourth item"></div>
+        <div class="fifth item"></div>
+        <div class="sixth item"></div>
+        <div class="seventh item"></div>
+
+    </div>
+    
+</body>
+</html>
